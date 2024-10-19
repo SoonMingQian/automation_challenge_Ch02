@@ -20,7 +20,7 @@ jobs:
         run: date
   depends:
     runs-on: ubuntu-latest
-    needs: [job1, job2, job3]
+    needs: [ubuntu, windows, macos]
     steps:
       - name: Print Date
         run: date
